@@ -1,0 +1,11 @@
+Subject: Payment Deadline Approaching: {{ fee.name }}
+
+Dear {{ student.name }},
+
+This is a reminder that the payment deadline for {{ fee.name }} (₦{{ fee.amount }})
+is on {{ fee.due_date|date:"F j, Y" }} ({{ days_remaining }} days remaining).
+
+Please make your payment at: {{ payment_url }}
+
+Regards,
+{{ school_name }} Administration
